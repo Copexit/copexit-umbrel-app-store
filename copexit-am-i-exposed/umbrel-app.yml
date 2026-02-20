@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.2.2"
+version: "0.2.3"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,9 +18,9 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Network and settings now persist across browser refresh. Fixed race condition
-  where external mempool.space requests could fire before local API detection
-  completes. Header logo reliably navigates back to landing page.
+  Fixed service worker caching bug that broke the app after every deploy.
+  HTML now uses network-first strategy so updates load immediately.
+  Setup guide now features Umbrel app install as the recommended option.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
