@@ -20,6 +20,7 @@ description: >-
 releaseNotes: >-
   Initial Umbrel release with all 16 privacy heuristics, address and transaction
   analysis, pre-send destination checks, and multi-language support.
+icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
 dependencies:
