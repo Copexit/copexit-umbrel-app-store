@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: copexit-am-i-exposed
+category: bitcoin
+name: "am-i.exposed"
+version: "0.1.0"
+tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
+description: >-
+  Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
+  with actionable findings. The engine runs 16 heuristics covering address reuse,
+  change detection, CoinJoin detection, script type analysis, timing patterns,
+  wallet fingerprinting, and more.
+
+
+  All analysis runs client-side in your browser. API calls go directly to your
+  local Umbrel mempool instance - no data leaves your network. No tracking,
+  no logging, no third-party analytics.
+
+
+  Requires the Mempool app to be installed.
+releaseNotes: >-
+  Initial Umbrel release with all 16 privacy heuristics, address and transaction
+  analysis, pre-send destination checks, and multi-language support.
+developer: Copexit
+website: https://am-i.exposed
+dependencies:
+  - mempool
+repo: https://github.com/Copexit/am-i-exposed
+support: https://github.com/Copexit/am-i-exposed/issues
+port: 3080
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: Copexit
+submission: ""

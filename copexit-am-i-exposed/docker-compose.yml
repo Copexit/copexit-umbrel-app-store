@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: copexit-am-i-exposed_web_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.1.0
+    user: "1000:1000"
+    init: true
+    restart: on-failure
+    stop_grace_period: 30s
+    environment:
+      APP_MEMPOOL_IP: ${APP_MEMPOOL_IP}
+      APP_MEMPOOL_PORT: ${APP_MEMPOOL_PORT}
+    networks:
+      default:
+        ipv4_address: ${APP_COPEXIT_AM_I_EXPOSED_IP}
