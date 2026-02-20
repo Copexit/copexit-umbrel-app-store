@@ -8,8 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.1.0
-    user: "1000:1000"
+    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.1.1
     init: true
     restart: on-failure
     stop_grace_period: 30s
