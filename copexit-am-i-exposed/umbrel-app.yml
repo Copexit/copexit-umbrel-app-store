@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.3.0"
+version: "0.3.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,11 +18,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Major quality release with 8 audit iterations covering heuristics, security,
-  accessibility, and localization. Fixes include: i18n error matching bug for
-  non-English users, ExportButton double-rendering, WabiSabi OP_RETURN detection,
-  change detection accuracy, CSP hardening, error message privacy, OFAC translation,
-  and 1000+ diacritical mark fixes across FR/ES/PT/DE locales.
+  Hotfix: Tor proxy for Chainalysis checks was broken by overly strict nginx
+  rate limiting (1r/s burst=5 rejected batches of 20 addresses) and a
+  mainnet-only address regex in the sidecar. Now supports all networks and
+  accommodates full 20-address batches. Also includes 8 audit iterations of
+  heuristic, security, accessibility, and localization improvements.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
