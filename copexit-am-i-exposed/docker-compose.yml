@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.5.0
+    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.6.0
     init: true
     restart: on-failure
     stop_grace_period: 30s
@@ -24,7 +24,7 @@ services:
         ipv4_address: ${APP_COPEXIT_AM_I_EXPOSED_IP}
 
   tor-proxy:
-    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.5.0
+    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.6.0
     init: true
     restart: on-failure
     stop_grace_period: 10s
