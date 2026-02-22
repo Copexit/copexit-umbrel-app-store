@@ -17,6 +17,7 @@ services:
       APP_MEMPOOL_PORT: ${APP_MEMPOOL_PORT}
       APP_TOR_PROXY_IP: ${APP_COPEXIT_AM_I_EXPOSED_TOR_PROXY_IP}
       APP_TOR_PROXY_PORT: "3001"
+      APP_MEMPOOL_HIDDEN_SERVICE: ${APP_MEMPOOL_HIDDEN_SERVICE}
     depends_on:
       - tor-proxy
     networks:
