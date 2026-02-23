@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.7.0"
+version: "0.8.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,13 +18,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Major self-hosted compatibility update. Reconstructs missing input data on
-  Umbrel mempool instances (romanz/electrs) so all 16 heuristics work accurately
-  regardless of backend. New self-send detection (change back to same address).
-  Wallet fingerprint now correctly attributes Bitcoin Core / Sparrow shared
-  patterns with reduced severity. Safer CoinJoin guidance (simpler steps first,
-  exchange flagging warnings). Address reuse detection handles incomplete
-  funded_txo_count data gracefully.
+  New Stonewall/STONEWALLx2 steganographic CoinJoin detection. Wasabi Wallet
+  and Samourai/Sparrow now identified via cross-heuristic analysis when CoinJoin
+  type is detected. Boltzmann entropy estimation for equal-output CoinJoin
+  transactions shows anonymity set size. Fixed wallet fingerprint and entropy
+  display bugs. Methodology page now fully localized in all 5 languages.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
