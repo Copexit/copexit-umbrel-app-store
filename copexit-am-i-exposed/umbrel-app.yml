@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.9.0"
+version: "0.9.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,12 +18,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Major UI modernization. Glassmorphic cards with backdrop blur across all
-  panels. Floating pill navbar on desktop. Ambient background orbs with noise
-  texture overlay. Animated input border with conic gradient. Cursor-following
-  glow on score and risk cards. Scroll-triggered section reveals. Score bar
-  shimmer and A+ pulsing text glow. Magnetic scan button. Gradient brand
-  accent on "exposed" wordmark. Compact mobile footer.
+  Fix transaction history accordion UX - clicking a row now expands details
+  instead of launching a scan. Full scan link added inside expanded content.
+  Fixed tip jar and toast transparency issues. Removed inline tip jar dismiss
+  button. Fixed PrivacyNotice overlapping floating navbar. Improved glass
+  card opacity for better readability.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
