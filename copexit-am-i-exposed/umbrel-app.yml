@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.11.0"
+version: "0.11.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,14 +18,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Comprehensive polish pass. Privacy engine: corrected Boltzmann entropy
-  calculation for extra inputs, fixed change detection on zero-value outputs,
-  tightened Whirlpool fingerprint range. UI/UX: fixed WCAG AA contrast across
-  15+ components, mobile TipToast overlap, error state alignment, grid orphan
-  layout. Architecture: extracted shared onStep callback, mode-aware retry
-  button, internationalized bookmark labels, added error handling to share card
-  export. QA: synced 25 missing i18n keys across all 5 locales, added aria
-  labels, removed dead CSS.
+  Privacy engine corrections from community feedback. Recommend Native SegWit
+  (bc1q) instead of Taproot for single-sig upgrades - P2WPKH has the largest
+  anonymity set. Fixed English text leaking in Spanish and other locales for
+  partial-history and presend findings. Presend on Umbrel now escalates to
+  HIGH risk when any transaction activity is detected with unavailable receive
+  data. New FAQ entry covering 7 change detection sub-heuristics. Added
+  Ashigaru to wallet recommendations. All changes translated across 5 locales.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
