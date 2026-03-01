@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.15.0"
+version: "0.16.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,12 +18,14 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Differentiated address scoring model. Address analysis now uses a higher
-  base score (93 vs 70 for transactions), allowing perfect address hygiene
-  to reach A+ (100/100). Address reuse penalties are now much harsher -
-  first reuse instantly drops to F grade (-70 impact). Reuse impacts scale
-  from -70 (2 transactions) to -93 (1000+ transactions). All reuse is now
-  classified as critical severity.
+  Community feedback round. Wallet fingerprinting now correctly attributes
+  Low-R signatures to Bitcoin Core / Sparrow (shared libsecp256k1 anonymity
+  set). PayJoin recommendations updated to V2 wallets (Bull Bitcoin,
+  Ashigaru). Peel Chain added to glossary. Examples now persist as a
+  permanent tab alongside Recent and Bookmarks. Chainalysis check on Umbrel
+  fixed - tor detection race condition resolved, CORS-safe error handling
+  for sidecar failures. Developer mode (click logo 5x) adds a standalone
+  tor proxy test panel.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
