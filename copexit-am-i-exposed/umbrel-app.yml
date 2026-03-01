@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.12.1"
+version: "0.13.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,9 +18,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Clickable and copyable transaction IDs in address scan history. Score
-  discrepancy note explaining tx vs address grades. Chainalysis error
-  messages now provide actionable hints instead of generic failures.
+  Dashboard redesign with zone-based layout and 6 new visualizations
+  (score waterfall, severity ring, transaction flow, CoinJoin structure,
+  UTXO bubble chart, privacy timeline). TxFlowDiagram now uses heuristic
+  findings for change and dust labeling. Removed misleading Taproot
+  recommendations in favor of anonymity-set-aware advice. Wider desktop
+  layout, improved score display hierarchy, auto-expand critical findings.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
