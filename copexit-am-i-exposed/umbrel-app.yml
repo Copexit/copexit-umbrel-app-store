@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.17.1"
+version: "0.17.2"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -22,6 +22,8 @@ releaseNotes: >-
   independently of mempool health, so the "Local" badge appears instantly
   even when mempool is restarting. Entropy calculation improved using the
   Boltzmann partition model. Per-UTXO entropy metric added to findings.
+  Whirlpool 8x8 and 9x9 added as example transactions. CoinJoin entropy
+  recommendation now gives actionable post-mix spending advice.
   Fixed settings panel positioning when scrolled.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
