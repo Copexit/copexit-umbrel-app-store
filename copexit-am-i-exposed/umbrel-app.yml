@@ -2,11 +2,11 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.18.1"
+version: "0.19.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
-  with actionable findings. The engine runs 16 heuristics covering address reuse,
+  with actionable findings. The engine runs 17 heuristics covering address reuse,
   change detection, CoinJoin detection, script type analysis, timing patterns,
   wallet fingerprinting, and more.
 
@@ -18,13 +18,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Community feedback round: two new change detection heuristics (value
-  disparity, unnecessary input), CoinJoin structure diagram now shows
-  address and value labels for all inputs and outputs, Stonewall no longer
-  triggers exchange flagging warning (steganographic transaction), address
-  reuse remediation rewritten with ownership qualifier, flow diagram value
-  labels now visible on smaller nodes, WabiSabi entropy uses weighted
-  per-tier permutation model.
+  New H17 multisig/escrow detection heuristic, fixed UTXO bubble chart
+  crash on address results, comprehensive accessibility improvements
+  (screen reader support, keyboard navigation, ARIA attributes across 12
+  components), fixed hydration mismatches, completed truncated translations
+  across all 4 non-English locales, SEO improvements (trailing slashes,
+  unified meta descriptions), eliminated dead code and unnecessary exports,
+  added error boundaries for chart components, 354 tests passing.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
