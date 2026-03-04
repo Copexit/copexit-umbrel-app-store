@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.19.0"
+version: "0.20.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,13 +18,9 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  New H17 multisig/escrow detection heuristic, fixed UTXO bubble chart
-  crash on address results, comprehensive accessibility improvements
-  (screen reader support, keyboard navigation, ARIA attributes across 12
-  components), fixed hydration mismatches, completed truncated translations
-  across all 4 non-English locales, SEO improvements (trailing slashes,
-  unified meta descriptions), eliminated dead code and unnecessary exports,
-  added error boundaries for chart components, 354 tests passing.
+  Export and import bookmarks as JSON for cross-browser transfer,
+  horizontal scroll examples with randomized order, streamlined footer,
+  mobile-responsive action buttons. 360 tests passing.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
