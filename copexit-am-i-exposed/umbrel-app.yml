@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.20.0"
+version: "0.21.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -18,9 +18,10 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Export and import bookmarks as JSON for cross-browser transfer,
-  horizontal scroll examples with randomized order, streamlined footer,
-  mobile-responsive action buttons. 360 tests passing.
+  Historical USD values for transactions - see the dollar value at time
+  of confirmation on every input, output, and in the hero card. New
+  round-USD-amount heuristic detects payments at round fiat values
+  ($5-$100k) and uses them as a change detection signal. 367 tests passing.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
