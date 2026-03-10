@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.23.1"
+version: "0.24.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,12 +19,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Graph Explorer now auto-expands 2 hops backward and forward when chain
-  analysis data is available (node limit raised from 20 to 50). Taint Flow
-  diagram nodes are now clickable - click an entity or intermediate hop to
-  analyze the linked address or transaction. Fixed tooltip positioning in
-  Taint Flow that drifted when scrolling. Added wallet icons for Bull Bitcoin,
-  Cake Wallet, and Nunchuk.
+  Major tech debt cleanup (split orchestrator, useAnalysis, ApiSettings into
+  smaller modules), accessibility improvements, DRY utilities, API hardening.
+  Wallet guide: corrected platform support (Electrum, Nunchuk, Blue Wallet now
+  show desktop+mobile), renamed Blockstream Jade to Green, added BIP47/Paynym
+  column, Ashigaru Stowaway PayJoin, Blue Wallet send-only Silent Payments.
+  Bull Bitcoin now shows own node + partial Tor support. Diagnostic loader
+  now collapses long step lists into a compact view. 745+ tests passing.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
