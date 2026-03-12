@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.27.1"
+version: "0.27.2"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,10 +19,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Fullscreen graph explorer with drag-to-pan, wheel-to-zoom, and zoom controls.
-  Interactive minimap for viewport navigation. Mobile-responsive toolbar. Error
-  messages auto-clear after 5 seconds. Fixed auto-scroll re-centering on every
-  node addition. Wallet UTXO graph explorer with multi-root expansion support.
+  Entity barriers in chain analysis - known entities (exchanges, mixers) now
+  stop backward/forward tracing because custodial services break chain of
+  custody. Transactions beyond entities no longer affect scoring or taint flow.
+  Fixed transaction flow diagram showing incorrect output values when outputs
+  had high value ratios.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
