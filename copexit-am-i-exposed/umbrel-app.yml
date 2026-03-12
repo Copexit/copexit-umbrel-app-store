@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.26.2"
+version: "0.27.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,10 +19,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Graph explorer UX improvements - backward edge arrows, hover effects, scroll-aware
-  tooltips, max nodes raised to 100. Entropy sweep finding deduplication with
-  consolidation-fan-in. Keyboard nav fix - Escape no longer globally resets analysis.
-  Viz label spacing fixes for CoinJoin Sankey and taint path diagrams.
+  Graph explorer power features - fullscreen mode, click-to-analyze floating panel
+  with instant privacy scoring, entity category colors and OFAC warnings, risk heat
+  map, minimap overview, node type filtering, keyboard navigation. Snapshot-based
+  undo system replacing the broken history approach. Fixed expand button not working
+  for outputs consumed via backward edges. Fixed AbortController killed by React
+  Strict Mode. Error feedback for failed expansions.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
