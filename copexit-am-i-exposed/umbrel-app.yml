@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.27.3"
+version: "0.27.4"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,11 +19,10 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Results panel reorganization with progressive disclosure - findings split into
-  3 tiers (issues, additional, strengths) with collapsible sections. Taint flow
-  diagram rewritten to use real trace layer data instead of approximations.
-  CoinJoin-specific fixes for suppressed findings. Score waterfall collapsed by
-  default. Badge tooltips on confidence, severity, and chain analysis findings.
+  CoinJoin barrier for entity proximity - entities behind CoinJoin rounds are
+  suppressed since CoinJoin breaks deterministic tracing. Stonewall CIOH fully
+  suppressed (intentional privacy technique). Results panel reorganization with
+  progressive disclosure, taint flow diagram rewritten with real trace data.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
