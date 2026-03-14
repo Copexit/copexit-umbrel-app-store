@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.27.8"
+version: "0.27.9"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,9 +19,9 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Fixed false deterministic links in JoinMarket Boltzmann heatmap - unmatched change
-  outputs no longer show 100% for all unmatched inputs. Large JoinMarket support
-  for 16+ participant CoinJoins with f64 partition formula and DFS guard.
+  Boltzmann linkability mode in transaction flow diagram - Sankey edges colored by
+  link probability. JoinMarket maker/taker probability differentiation. Multi-worker
+  parallel Boltzmann computation. Fixed stale cached results after engine updates.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
