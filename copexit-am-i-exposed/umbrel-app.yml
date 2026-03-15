@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.27.9"
+version: "0.28.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,9 +19,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Boltzmann linkability mode in transaction flow diagram - Sankey edges colored by
-  link probability. JoinMarket maker/taker probability differentiation. Multi-worker
-  parallel Boltzmann computation. Fixed stale cached results after engine updates.
+  Desktop dashboard layout - two-column view with charts on the left and score,
+  findings, and recommendations on the right. Wider container for better screen
+  utilization. Severity ring uses solid fills for reliability. Mobile layout
+  unchanged with score and severity ring in hero card. Alert banners visible
+  on both mobile and desktop. Taint flow diagram auto-scrolls to target transaction.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
