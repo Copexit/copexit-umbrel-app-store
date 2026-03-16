@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.31.0"
+version: "0.31.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,12 +19,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  New Normie/Cypherpunk experience mode toggle in the navbar. Normie mode
-  shows a focused single-column view with score, critical findings, and
-  actionable recommendations. Cypherpunk mode unlocks all advanced
-  visualizations: graph explorer, taint diagram, linkability matrix,
-  entity/OFAC detection, confidence badges, score waterfall, and
-  analysis settings. Graph explorer moved up for faster access.
+  Graph explorer UX overhaul - focus spotlight mode dims non-connected
+  nodes when sidebar is open, animated edge flow particles, contextual
+  glow auras on CoinJoin/OFAC/root nodes, ambient dot grid background,
+  expansion history time-travel slider, privacy ripple animation on
+  entropy edges. Fixed edge tooltip scroll drift, reduced data redundancy
+  between tooltip and sidebar, resolved color conflicts. Smile/terminal
+  icons for Normie/Cypherpunk mode toggle.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
