@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.31.1"
+version: "0.34.3"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,13 +19,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Graph explorer UX overhaul - focus spotlight mode dims non-connected
-  nodes when sidebar is open, animated edge flow particles, contextual
-  glow auras on CoinJoin/OFAC/root nodes, ambient dot grid background,
-  expansion history time-travel slider, privacy ripple animation on
-  entropy edges. Fixed edge tooltip scroll drift, reduced data redundancy
-  between tooltip and sidebar, resolved color conflicts. Smile/terminal
-  icons for Normie/Cypherpunk mode toggle.
+  CLI tool and agent integration. New am-i-exposed npm package with
+  scan tx/address/xpub/psbt, Boltzmann entropy (Rust/WASM), chain
+  tracing, and MCP server for AI agents. SQLite response cache,
+  --fast mode, standalone binary support. /agents page on the web app.
+  Transaction graph port spacing fix, paste restore in search bar,
+  Spanish copy rework, Boltzmann method labeling improvements.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
