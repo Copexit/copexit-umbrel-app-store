@@ -8,24 +8,23 @@ services:
       PROXY_AUTH_ADD: "false"
 
   web:
-    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.35.6
+    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.35.6@sha256:da5d88a2e8941771be559c1645268bcef49e179c48f36df8e5dc28ef8ef43513
+    user: "1000:1000"
     init: true
     restart: on-failure
     stop_grace_period: 30s
     environment:
       APP_MEMPOOL_IP: ${APP_MEMPOOL_IP}
       APP_MEMPOOL_PORT: ${APP_MEMPOOL_PORT}
-      APP_TOR_PROXY_IP: ${APP_COPEXIT_AM_I_EXPOSED_TOR_PROXY_IP}
-      APP_TOR_PROXY_PORT: "3001"
       APP_MEMPOOL_HIDDEN_SERVICE: ${APP_MEMPOOL_HIDDEN_SERVICE}
+      APP_TOR_PROXY_IP: tor-proxy
+      APP_TOR_PROXY_PORT: "3001"
     depends_on:
       - tor-proxy
-    networks:
-      default:
-        ipv4_address: ${APP_COPEXIT_AM_I_EXPOSED_IP}
 
   tor-proxy:
-    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.35.6
+    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.35.6@sha256:36e418eaa9ec027311ea826c28b6388d88f3c24c9ca7e01d9cfcb9744476e528
+    user: "1000:1000"
     init: true
     restart: on-failure
     stop_grace_period: 10s
@@ -33,6 +32,3 @@ services:
       PORT: "3001"
       TOR_PROXY_IP: ${TOR_PROXY_IP}
       TOR_PROXY_PORT: ${TOR_PROXY_PORT}
-    networks:
-      default:
-        ipv4_address: ${APP_COPEXIT_AM_I_EXPOSED_TOR_PROXY_IP}
