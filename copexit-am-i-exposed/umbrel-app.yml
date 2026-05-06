@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.35.6"
+version: "0.35.7"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,14 +19,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  New heuristics: Wasabi 1.0 CoinJoin fingerprint detection, BIP352
-  Silent Payment address recognition, dust-spending detection (dust
-  inputs co-spent with non-dust). Graph explorer: bookmark transactions
-  from sidebar, drag expanded nodes, mobile touch improvements,
-  viewport auto-centering, open-in-new-tab for transactions. Wallet
-  guide: coin control and tracker columns in comparison table, improved
-  strategy risk warnings. xpub input now asks for address type. Various
-  scoring and change detection fixes.
+  Fixes container startup on Umbrel: the previous build set USER 1000
+  in the Dockerfile but nginx-unprivileged's /etc/nginx/conf.d/ is owned
+  by UID 101, blocking the entrypoint's envsubst step and leaving nginx
+  with no server block. Switches to USER nginx so the templated config
+  renders correctly and the web container becomes healthy.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
