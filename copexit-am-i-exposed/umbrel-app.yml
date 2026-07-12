@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.35.7"
+version: "0.35.8"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
@@ -19,11 +19,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Fixes container startup on Umbrel: the previous build set USER 1000
-  in the Dockerfile but nginx-unprivileged's /etc/nginx/conf.d/ is owned
-  by UID 101, blocking the entrypoint's envsubst step and leaving nginx
-  with no server block. Switches to USER nginx so the templated config
-  renders correctly and the web container becomes healthy.
+  Restores the CoinJoin Observatory's Whirlpool data. Whirlpool.Observer is
+  back online at whirlpoolstats.xyz with its full JSON API, so the broken
+  scraper was replaced with a direct JSON feed. This recovers per-pool unspent
+  balances, UTXO counts, cycle counts and fee efficiency, and adds a Recent
+  Cycles table where each coinjoin cycle links into the scanner. WabiSabi
+  coordinators idle for 30 or more days now collapse behind a toggle. On
+  self-hosted setups the Whirlpool data is fetched over the local Tor proxy.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
