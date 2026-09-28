@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.37.0"
+version: "0.37.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,18 +22,14 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  A redesigned interface. The new UI replaces the classic one and follows your
-  system light or dark theme. Results load faster and read more clearly: the
-  transaction flow is drawn as soon as it is fetched, and the verdict, findings
-  and score breakdown are easier to scan. The graph explorer starts compact
-  with a few ranked neighbours so the most relevant hops come first. Also
-  includes scan and navigation fixes and resolves a startup failure on Umbrel
-  (the web container restarted in a loop since 0.35.8). Other fixes: guide links open
-  the right section, the custom API URL is validated, testnet3 was removed
-  (testnet4 and signet remain), graph views fit on phones and node badges no
-  longer overlap, tap targets are larger, the scan timer shows the real trace
-  limit, CoinJoin scans finish faster, and the Link Probability Matrix now
-  computes for JoinMarket rounds where makers combine inputs.
+  Chainalysis screening now says when the Chainalysis service itself is
+  failing, instead of reporting the Tor proxy as unavailable, and a failed
+  check is never shown as clear. Includes 0.37.0: a redesigned interface that
+  follows your system light or dark theme, faster and clearer results, a
+  graph explorer that starts compact with ranked neighbours, a fix for the
+  Umbrel startup failure (the web container restarted in a loop since 0.35.8),
+  and fixes to guide links, network settings, the Link Probability Matrix for
+  JoinMarket rounds and CoinJoin scan speed.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
