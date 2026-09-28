@@ -2,34 +2,38 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.36.0"
+version: "0.37.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
-  Paste a Bitcoin address or transaction ID and get a privacy score from 0 to 100
-  with actionable findings. The engine runs 36+ heuristics covering address reuse,
-  change detection, CoinJoin detection (Whirlpool, WabiSabi, JoinMarket), script
-  type analysis, timing patterns, wallet fingerprinting, chain analysis, entity
-  proximity detection, and more.
+  Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
+  PSBT and get a privacy score from 0 to 100 with clear findings and fixes. The
+  engine runs 34 heuristics and 10 chain analysis modules covering address
+  reuse, change detection, CoinJoin detection (Whirlpool, WabiSabi,
+  JoinMarket), script types, timing, wallet fingerprinting and entity
+  proximity, plus Boltzmann entropy computed on-device and an interactive
+  transaction graph explorer.
 
 
-  All analysis runs client-side in your browser. API calls go directly to your
-  local Umbrel mempool instance - no data leaves your network. No tracking,
-  no logging, no third-party analytics.
+  All analysis runs client-side in your browser. Blockchain data comes from
+  your local Umbrel mempool instance, so your addresses and transactions never
+  leave your network. The optional Chainalysis check is routed over Tor. No
+  tracking, no logging, no third-party analytics.
 
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  A full audit release: more accurate grades, more reliable scans and better
-  privacy. Chain and entity findings now count toward the grade, several noisy
-  or inverted heuristics were fixed (change detection, fee and low-R
-  fingerprints, single-owner transactions no longer scored as CoinJoins,
-  Lightning close detection), and entropy merges same-address coins. Failed
-  API requests are no longer scored or cached as empty data, wallet scans
-  report partial results, Boltzmann jobs no longer hang, and no request leaves
-  for Cloudflare or public mempool.space before your node is detected. PSBT
-  and descriptor parsing were corrected (BIP-380 checksums), every finding is
-  translated in all six languages, and the Chainalysis check handles rate
-  limits clearly on Tor and Umbrel.
+  A redesigned interface. The new UI replaces the classic one and follows your
+  system light or dark theme. Results load faster and read more clearly: the
+  transaction flow is drawn as soon as it is fetched, and the verdict, findings
+  and score breakdown are easier to scan. The graph explorer starts compact
+  with a few ranked neighbours so the most relevant hops come first. Also
+  includes scan and navigation fixes and resolves a startup failure on Umbrel
+  (the web container restarted in a loop since 0.35.8). Other fixes: guide links open
+  the right section, the custom API URL is validated, testnet3 was removed
+  (testnet4 and signet remain), graph views fit on phones and node badges no
+  longer overlap, tap targets are larger, the scan timer shows the real trace
+  limit, CoinJoin scans finish faster, and the Link Probability Matrix now
+  computes for JoinMarket rounds where makers combine inputs.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed

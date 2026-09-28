@@ -6,7 +6,7 @@ Community app store for [Umbrel](https://umbrel.com/) by Copexit.
 
 ### am-i.exposed
 
-Bitcoin privacy scanner. Paste an address or transaction ID and get a privacy score with actionable findings. Runs 16 heuristics entirely client-side - API calls go to your local Umbrel mempool instance.
+Bitcoin privacy scanner. Paste an address or transaction ID and get a privacy score with actionable findings. Runs 34 heuristics and 10 chain analysis modules entirely client-side - API calls go to your local Umbrel mempool instance.
 
 - **Requires:** Mempool app
 - **Website:** [am-i.exposed](https://am-i.exposed)
