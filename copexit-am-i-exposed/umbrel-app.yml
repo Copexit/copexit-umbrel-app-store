@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.37.1"
+version: "0.37.2"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,14 +22,16 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Chainalysis screening now says when the Chainalysis service itself is
-  failing, instead of reporting the Tor proxy as unavailable, and a failed
-  check is never shown as clear. Includes 0.37.0: a redesigned interface that
-  follows your system light or dark theme, faster and clearer results, a
-  graph explorer that starts compact with ranked neighbours, a fix for the
-  Umbrel startup failure (the web container restarted in a loop since 0.35.8),
-  and fixes to guide links, network settings, the Link Probability Matrix for
-  JoinMarket rounds and CoinJoin scan speed.
+  New examples to learn from: a sweep, a consolidation, address reuse, a dust
+  attack, a batch payment, a coinbase and one CoinJoin of each kind (Whirlpool
+  on Ashigaru, JoinMarket, Wasabi). WabiSabi rounds are now recognised
+  exactly by the Wasabi protocol's standard denominations and labelled as
+  such. More accurate scores: transactions with a single input no longer get
+  entropy credit, peel chains need two real hops, consolidations no longer get
+  a changeless credit, and a dust attack is scored once. Very large CoinJoins
+  show their number of interpretations as an approximation instead of a false
+  exact count. Includes 0.37: the redesigned interface that follows your
+  system light or dark theme, and the Umbrel startup fix.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
