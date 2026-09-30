@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.37.4"
+version: "0.37.5"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,13 +22,9 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Privacy guide refresh: the Lightning section now recommends Phoenix and Zeus
-  with an accurate note on how each wallet exposes your payments, the Monero
-  atomic swap tool is listed under its new name eigenwallet (formerly
-  UnstoppableSwap), and the Blockstream wallet is now marked as offering full
-  coin control. Includes 0.37.3: CoinJoin Observatory tabs with recent
-  WabiSabi rounds, the reference Boltzmann rule for single-input and
-  single-output transactions, and clearer common-input counts.
+  The Link Probability Matrix tooltip is now fully translated: the link
+  strength label (Ambiguous, Likely, Unlikely...) and the partial-result note
+  follow the selected language instead of always showing English.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
