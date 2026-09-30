@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.37.3"
+version: "0.37.4"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,16 +22,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  The CoinJoin Observatory now has separate Whirlpool (Ashigaru) and WabiSabi
-  (Wasabi) tabs, and lists the most recent WabiSabi rounds with a one-click
-  scan. The Link Probability Matrix now follows the reference Boltzmann rule
-  for transactions with a single input or a single output (one
-  interpretation, every link certain), and large consolidations are computed
-  instead of reported as too complex. The common-input finding says how many
-  inputs come from how many addresses. The home page has a "see how it works"
-  shortcut, and the guide's swap advice no longer names a specific service.
-  Includes 0.37: the redesigned interface, new examples, exact WabiSabi
-  detection and the Umbrel startup fix.
+  Privacy guide refresh: the Lightning section now recommends Phoenix and Zeus
+  with an accurate note on how each wallet exposes your payments, the Monero
+  atomic swap tool is listed under its new name eigenwallet (formerly
+  UnstoppableSwap), and the Blockstream wallet is now marked as offering full
+  coin control. Includes 0.37.3: CoinJoin Observatory tabs with recent
+  WabiSabi rounds, the reference Boltzmann rule for single-input and
+  single-output transactions, and clearer common-input counts.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
