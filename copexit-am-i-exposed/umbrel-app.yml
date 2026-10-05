@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.37.5"
+version: "0.38.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,9 +22,16 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  The Link Probability Matrix tooltip is now fully translated: the link
-  strength label (Ambiguous, Likely, Unlikely...) and the partial-result note
-  follow the selected language instead of always showing English.
+  Before You Send: analyze a transaction before broadcasting it. Paste a PSBT
+  (any length, base64 or hex) or a raw transaction, open or drop a .psbt or
+  .txn file, or scan a QR code from your hardware wallet (animated BC-UR and
+  BBQr included; live camera scanning needs the .onion address, plain http
+  offers a photo of the QR instead). Everything is analyzed in your browser and
+  never stored. On
+  your own node, input amounts are looked up automatically, and a fully signed
+  transaction can be broadcast after a clear confirmation. Also: CoinJoin
+  outputs stay grouped in the fullscreen flow, a mirrored camera preview for
+  laptop webcams, and a cleaner home page title.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
