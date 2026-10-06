@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.38.5"
+version: "0.39.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,11 +22,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  The wallet scan gap limit now goes up to 1000 (Settings), for wallets with
-  years of history such as shop wallets, and the results offer rescans with
-  20, 100, 300 or 1000. Includes 0.38.3 and 0.38.4: plain xpub/tpub address
-  types detected from history, consolidations counted only when they spend
-  your own coins, and a gap limit of 20 on your Umbrel by default.
+  New optional CoinJoin services check on transaction, address and wallet
+  results: after you click, it asks Wabisator (through Tor from your node)
+  whether the transactions were part of WabiSabi CoinJoin rounds, which
+  coordinator ran them, how many coins were fresh or remixed, and whether
+  post-mix coins were spent together. Nothing is sent until you click, and
+  the result never changes your score. The Observatory now goes through the
+  same Tor route. Includes 0.38.5: wallet gap limit up to 1000.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
