@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.38.2"
+version: "0.38.3"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,13 +22,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Broadcasting from your Umbrel now shows clear messages when a transaction
-  is already confirmed or its inputs are already spent, instead of the raw
-  node error. Scanning a testnet wallet key now explains that your node
-  serves mainnet instead of reporting the API as unavailable. Clearer camera
-  message on Tor. Includes 0.38.0 and 0.38.1: Before You Send (check a PSBT
-  or raw transaction, pasted, from a file or scanned from your hardware
-  wallet QR, before broadcasting it) and wallet export QR scanning.
+  Wallet scans now detect the address type of a plain xpub/tpub from its
+  history instead of assuming legacy addresses, with one-click rescans as
+  another type. Your Umbrel now scans with the standard gap limit of 20, and
+  the results show the gap limit used. Consolidations are only counted when
+  they spend your own coins. Includes 0.38.0 to 0.38.2: Before You Send
+  (check a PSBT or raw transaction before broadcasting it) and hardware
+  wallet QR scanning.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
