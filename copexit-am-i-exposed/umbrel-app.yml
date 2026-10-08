@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.40.1"
+version: "0.41.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,11 +22,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Wallet audits now list every UTXO (sortable by amount or age, with
-  address, path, confirmations and hints like reused addresses), and coin
-  selection can suggest spending one or two coins with no change output
-  when that links nothing new. The Whirlpool Observatory shows the current
-  block height and how many blocks ago each pool last ran a CoinJoin.
+  New P2P markets tab in the Observatory: live KYC-free bitcoin offers from
+  RoboSats, Mostro and HodlHodl with premiums against a common index, a depth
+  wall, venue health and volume history. On your Umbrel all of it goes
+  through Tor, including every RoboSats coordinator's onion. Wallet audits
+  gain wallet-level checks: post-mix merges, change merged with other coins,
+  change that standard rules can spot, peel chains, and a breakdown of where
+  your coins came from.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
