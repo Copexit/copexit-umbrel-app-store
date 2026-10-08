@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.40.0"
+version: "0.40.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,13 +22,11 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  A new CoinJoin Observatory for WabiSabi: a living map where every CoinJoin
-  pulses and fresh and remixed coins fly between coordinators, with 24 h,
-  7 d and 30 d replays that end in live mode; a live board of each
-  coordinator's rounds filling up; coordinator pages with volume history,
-  largest CoinJoins and recent rounds; remix flows; and search by CoinJoin
-  txid or date. On your Umbrel all of it goes through Tor. Includes 0.39.1:
-  smarter coin selection advice in wallet audits.
+  Wallet audits now list every UTXO (sortable by amount or age, with
+  address, path, confirmations and hints like reused addresses), and coin
+  selection can suggest spending one or two coins with no change output
+  when that links nothing new. The Whirlpool Observatory shows the current
+  block height and how many blocks ago each pool last ran a CoinJoin.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
