@@ -7,7 +7,7 @@ services:
       APP_PORT: 8080
 
   web:
-    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.41.3@sha256:52410fd9c38264d6a857b0a77e89804461f05a6191690ff5b2768d4b2bea4517
+    image: ghcr.io/copexit/am-i-exposed-umbrel:v0.41.4@sha256:3d720b02d386e2caf2ebeb97e637ec7684a00046b53ba296afdd985ad39d7a43
     user: "101:101"
     init: true
     restart: on-failure
@@ -26,7 +26,7 @@ services:
       - tor-proxy
 
   tor-proxy:
-    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.41.3@sha256:09ed61c1d12c8c9d25c0c5bc04f071b5a85bb46d67d64b04a6e542f50d4f14fc
+    image: ghcr.io/copexit/am-i-exposed-tor-proxy:v0.41.4@sha256:57c4ae4c07793f23825246c1f4dda9125cd39041fe292db4f866d0f298e44710
     user: "1000:1000"
     init: true
     restart: on-failure

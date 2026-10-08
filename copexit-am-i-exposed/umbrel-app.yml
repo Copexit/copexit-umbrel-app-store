@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.41.3"
+version: "0.41.4"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,12 +22,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  BIP329 wallet labels: import your labels from Sparrow or any BIP329 wallet,
-  see them as origin chips ([KYC], [noKYC], [CJ], toxic...), freeze coins
-  marked not spendable, get coin selection warnings when a plan would merge
-  KYC with non-KYC coins, and export your labels plus the analysis as aie:
-  labels to load back into your wallet. The guide explains a labeling
-  convention that keeps coin control simple.
+  Coin selection shows up to 8 options you can rank by privacy, least change,
+  no change, fewest coins or lowest fee, and lets you pick coins by hand
+  with a live summary. Change under 5,000 sats (adjustable) can go to the
+  miners so the payment leaves no change. Labels now follow Sparrow
+  transaction labels, are checked against the chain, can set an origin for
+  the whole wallet, and the guide has labeling recommendations.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
