@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.41.1"
+version: "0.41.2"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,10 +22,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Filter P2P offers by payment method (SEPA, PIX, Revolut, Wise, cash,
-  stablecoins and about 75 more), with names from RoboSats, Mostro and
-  HodlHodl merged into one list. Includes 0.41.0: the P2P markets tab and
-  wallet-level privacy checks.
+  Smarter coin selection: it knows which of your coins the chain already
+  links (for certain or probably), ranks plans by privacy cost, keeps
+  CoinJoin outputs out of small payments with big change, and explains each
+  option. Every UTXO now gets one consistent verdict, and linked coins are
+  shown as groups. P2P markets gain an amount filter ("cheapest for 250 EUR
+  by SEPA").
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
