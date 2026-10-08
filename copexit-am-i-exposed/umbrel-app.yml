@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.42.0"
+version: "0.42.1"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,13 +22,12 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  Saved wallets: a scanned wallet reopens instantly and a quick refresh
-  checks only what can have changed (seconds instead of a full rescan), with
-  an optional, clearly warned wallet bookmark to reopen it in one click.
-  Coin selection gains a spending decision tree: enter the recipient to get
-  alerts for reused addresses, round amounts and address-type mismatches,
-  prefer coins the recipient already knows, see each plan's decision path,
-  and a round-change option. The guide adds a spending checklist.
+  Works with Umbrel nodes on signet and testnet4: the app now asks your node
+  which network it runs instead of assuming mainnet, so tpub/vpub wallets and
+  tb1 addresses scan on a signet or testnet4 Umbrel. Coin selection ranks
+  plans strictly by the guide's rules (never merge change, then change size,
+  then new links), explains what an observer learns from each plan, and shows
+  two options side by side when there is no clean choice.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
