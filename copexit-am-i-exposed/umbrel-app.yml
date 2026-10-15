@@ -2,7 +2,7 @@ manifestVersion: 1
 id: copexit-am-i-exposed
 category: bitcoin
 name: "am-i.exposed"
-version: "0.42.2"
+version: "0.43.0"
 tagline: Bitcoin privacy scanner - see what the blockchain reveals about you
 description: >-
   Paste a Bitcoin address, transaction ID, xpub or descriptor, or an unsigned
@@ -22,12 +22,13 @@ description: >-
 
   Requires the Mempool app to be installed.
 releaseNotes: >-
-  More reliable wallet scans: a slow answer from mempool.space is retried
-  instead of stopping the scan with a network error. Coin selection only
-  treats change as untouchable when an observer can actually identify it
-  (an ambiguous self-transfer output can be merged at the cost of a probable
-  link). The Observatory sections and the labeling and spending guides now
-  have their own pages, plus translation fixes.
+  Graph investigation tools: find how two transactions or addresses are
+  connected, with each hop scored by change detection and Boltzmann; export
+  and import graph labels as BIP329 with a conflict preview; a time layout
+  that orders the graph by block; and multi-select to label, hide or isolate
+  many nodes at once. New encrypted backup of bookmarks, saved graphs,
+  wallets and settings, plus an optional password lock for the xpubs saved in
+  wallet bookmarks.
 icon: https://raw.githubusercontent.com/Copexit/copexit-umbrel-app-store/master/copexit-am-i-exposed/icon.svg
 developer: Copexit
 website: https://am-i.exposed
